@@ -1,3 +1,12 @@
+.header{
+    background-color: #666666;
+}
+.header img{
+    width: 45px;
+}
+.header .voltar img{
+    margin-left: 10px;
+}
 .header nav ul{
     display: flex;
 }
@@ -47,46 +56,41 @@
     bottom: 0;
 }
 @media (max-width: 900px) {
+    .header .voltar img{
+        height: 38px;
+    }
     .header .menu  {
         display: block;
     }
-
     .header nav ul{
         display: none;
     }
-
     .header input:checked ~ ul {
         display: block;
     }
-
     .header nav  {
         position: absolute;
         right: 0;
-        top: 8px;
+        top: 0px;
         z-index: 1;
-        background-color: #fff;
+        background-color: #666666;
     }
-
     .header ul {
         box-shadow: -3px 7px 5px 1px rgba(0, 0, 0, 0.034);
     }
-
     .header ul li {
         display: block;
         text-align: center;
-        width: 180px;
-        padding: 20px;
-    }
-    
+        width: 80px;
+        padding: 5px;
+    }    
     .header .itensMenu a {
         margin-left: 0px;
-    }
-    
+    }    
     .header label {
         display: flex;
         flex-direction: column;
     }
-
     .header label div {
         align-self: flex-end;
     }
