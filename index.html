@@ -4,47 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChefPlus</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/menu.css">
 </head>
 <body>
-    <menu name="menu">
-        <a name="voltar"></a>
-        <div name="itensMenu">
-            <a name="fecharMesa"></a>
-            <a name="transferenciaMesa"></a>
-            <a name="agrupamentoMesa"></a>
-            <a name="imprimirConsumo"></a>
-            <a name="logout"></a>
-            <img src="" alt="logo">
-        </div>
-    </menu>
-    <main>
-        <div name="consultaProdutos">
-            <input type="text" name="pesquisaProduto" id="" alt="Pesquisa de produto" placeholder="Pesquisar um produto">
-            <div name="produtos">
-                <div name="itemProdutos">
+    
+    <header class="header">
+        <a class="voltar"><img src="src/imagens/Seta.png" alt="Voltar para a tela anterior."></a>
+        <nav>
+            <input type="checkbox" name="menu-hamburguer" id="menu-hamburguer">
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+            <ul class="itensMenu">
+                <li></li><a class="fecharMesa"><img src="src/imagens/FecharMesa.png" alt="Fechar Mesa."></a></li>
+                <li><a class="transferenciaMesa"><img src="src/imagens/Transferencia.png" alt="Transferir consumo para outra mesa."></a></li>
+                <li><a class="agrupamentoMesa"><img src="src/imagens/Agrupamento.png" alt="Agrupar mesas."></a></li>
+                <li><a class="imprimirConsumo"><img src="src/imagens/impressora.png" alt="Imprimir consumo da mesa."></a></li>
+                <li><a class="logout"><img src="src/imagens/DeslogarSistema.png" alt="Deslogar do sistema."></a></li>
+                <li><img src="src/imagens/logo chefplus deitado.png" alt="logo"></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="corpoPrincipal">
+        <div class="consultaProdutos">
+            <input type="text" class="pesquisaProduto" id="" alt="Pesquisa de produto" placeholder="Pesquisar um produto">
+            <div class="produtos">
+                <div class="itemProdutos">
                     <p>Nome produto</p>
                     <img src="" alt="Foto do produto">
                     <p>R$10,00</p>
-                    <div name="adicionarTiraritem">
-                        <button name="tirarItem"><img src="" alt="Tirar um item"></button>
-                        <p name="quantidade">00</p>
-                        <button name="adicionarItem"><img src="" alt="Adicioar um item"></button>
+                    <div class="adicionarTiraritem">
+                        <button class="tirarItem"><img src="" alt="Tirar um item"></button>
+                        <p class="quantidade">00</p>
+                        <button class="adicionarItem"><img src="" alt="Adicioar um item"></button>
                     </div>
-                    <textarea name="observaoItem" id="" cols="30" rows="10" placeholder="Observação do item"></textarea>
+                    <textarea class="observaoItem" id="" cols="30" rows="3" placeholder="Observação do item"></textarea>
                 </div>
             </div>
             <button>Confirmar pedido</button>
         </div>
-        <div name="telaItenslancados">
-            <p name="numeroMesa">Mesa 00</p>
-            <div name="gridItens">
-                <div name="informacoesItem">
-                    <p name="descricaoItemLancado">Descrição item - Observação do item</p>
+        <div class="telaItenslancados">
+            <p class="numeroMesa">Mesa 00</p>
+            <div class="gridItens">
+                <div class="informacoesItem">
+                    <p class="descricaoItemLancado">Descrição item - Observação do item</p>
                     <p>Qtde X Valor = Total</p>
                 </div>
-                <button name="excluirItem"><img src="" alt="Excluir um item lançado"></button>
+                <button class="excluirItem"><img src="" alt="Excluir um item lançado"></button>
             </div>
-            <p name="totalMesa">Total R$130,99</p>
+            <p class="totalMesa">Total R$130,99</p>
         </div>
     </main>
 </body>
