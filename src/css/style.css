@@ -18,11 +18,14 @@
     background-color: #CCCCCC;
     border-radius: 10px;
     margin: 20px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    width: 40%;
 }
 .corpoPrincipal .consultaProdutos{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 .corpoPrincipal .produtos{
     display: flex;
@@ -33,15 +36,25 @@
     width: 95%;
     height: 30px;
     margin-top: 10px;
-    text-align: center;
 }
 .corpoPrincipal .consultaProdutos .produtos{
     display: flex;
     flex-wrap: wrap;
 }
-.corpoPrincipal .consultaProdutos .produtos .itemProdutos{
-    min-width: 200px;
-    padding: 15px;
+.corpoPrincipal .consultaProdutos .produtos .itemProdutos .containerProdutos{
+    min-width: 130px;
+    background-color: white;
+    margin: 10px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+.corpoPrincipal .consultaProdutos .produtos .itemProdutos .adicionarTiraritem{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid;
+}
+.corpoPrincipal .consultaProdutos .produtos .itemProdutos .adicionarTiraritem button{
+    width: 20px;
 }
 .confirmarLancamento{
     border-radius: 10px;
@@ -49,7 +62,6 @@
     width: 95%;
     height: 30px;
     margin-bottom: 10px;
-    text-align: center;
     background-color: #3B843B;
     color: white;
 }
