@@ -2,14 +2,16 @@
     background-color: #666666;
 }
 .header .container img{
+    height: 45px;
     width: 45px;
-    margin-left: 3px;
+    margin-left: 10px;
 }
 .header .logo{
     height: 40px;
-    margin-left: 5px;   
+    margin-left: 10px;   
 }
 .header .voltar img{
+    height: 40px;
     margin-left: 10px;
 }
 .header nav ul{
@@ -20,22 +22,22 @@
 }
 .header .menu {
     display: none;
-    width: 65px;
+    width: 55px;
     height: 55px;
 }
 .header .hamburguer {
-    background-color: #000;
+    background-color: #3A4145;
     position: relative;
     display: block;
     width: 30px;
     height: 2px;
     top: 25px;
-    left: 15px;
+    left: 10px;
     transition: 0.5s ease-in-out;
 }
 .header .hamburguer::before,
 .header .hamburguer::after {
-    background-color: #000;
+    background-color: #3A4145;
     position: absolute;
     display: block;
     width: 100%;
@@ -61,11 +63,11 @@
     bottom: 0;
 }
 @media (max-width: 900px) {
-    .header .voltar img{
-        height: 38px;
-    }
     .header .menu  {
         display: block;
+    }
+    .header .container img{
+        margin-left: 5px;
     }
     .header nav ul{
         display: none;
@@ -80,26 +82,16 @@
         z-index: 1;
         background-color: #666666;
     }
-    .header ul {
-        box-shadow: -3px 7px 5px 1px rgba(0, 0, 0, 0.034);
-    }
     .header ul li {
         display: block;
-        text-align: center;
-        width: 60px;
-        padding: 5px;
     }
     .header ul li img{
-        width: 50px;
-    }    
-    .header .itensMenu a {
-        margin-left: 0px;
-    }    
+        width: 100%;
+        margin-bottom: 5px;
+    }  
     .header label {
         display: flex;
         flex-direction: column;
-    }
-    .header label div {
-        align-self: flex-end;
+        
     }
 }
