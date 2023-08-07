@@ -40,10 +40,11 @@ main{
 .corpoPrincipal .consultaProdutos .produtos{
     display: flex;
     flex-wrap: wrap;
+    margin-left: 10px;
 }
 .corpoPrincipal .consultaProdutos .produtos .itemProdutos{
-    margin: 10px;
-    width: 150px;
+    margin: 10px 15px 10px 0px;
+    width: 130px;
 }
 .corpoPrincipal .consultaProdutos .produtos .itemProdutos .containerProdutos{
     background-color: white;
