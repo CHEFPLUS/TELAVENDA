@@ -9,8 +9,12 @@
     height: 55px;
     width: 100%;
 }
-.corpoPrincipal{
+main{
+    background: url(../imagens/logo_fundo.png) no-repeat;
     background-color: #EFEFEF;
+    height: 100vh;
+}
+.corpoPrincipal{
     display: flex;
     justify-content: space-between;
 }
@@ -19,49 +23,55 @@
     border-radius: 10px;
     margin: 20px;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
-    width: 40%;
+    width: 45%;
+    max-height: 800px;
 }
 .corpoPrincipal .consultaProdutos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 10px;
     text-align: center;
 }
-.corpoPrincipal .produtos{
-    display: flex;
-}
-.corpoPrincipal input{
+.corpoPrincipal .consultaProdutos input{
     border-radius: 10px;
     border: #CCCCCC;
-    width: 95%;
-    height: 30px;
-    margin-top: 10px;
+    width: 100%;
+    height: 35px;
 }
 .corpoPrincipal .consultaProdutos .produtos{
     display: flex;
     flex-wrap: wrap;
 }
+.corpoPrincipal .consultaProdutos .produtos .itemProdutos{
+    margin: 10px;
+    width: 150px;
+}
 .corpoPrincipal .consultaProdutos .produtos .itemProdutos .containerProdutos{
-    min-width: 130px;
     background-color: white;
-    margin: 10px 10px;
     border-radius: 5px;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
 }
-.corpoPrincipal .consultaProdutos .produtos .itemProdutos .adicionarTiraritem{
+.corpoPrincipal .consultaProdutos .produtos .itemProdutos .adicionarTirarItem{
+    margin-top: 5px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
     border: 1px solid;
+    border-radius: 10px;
 }
-.corpoPrincipal .consultaProdutos .produtos .itemProdutos .adicionarTiraritem button{
-    width: 20px;
+.corpoPrincipal .consultaProdutos .produtos .itemProdutos .adicionarTirarItem img{
+    width: 25px;
+    margin-top: 3px;
 }
 .confirmarLancamento{
     border-radius: 10px;
     border: #CCCCCC;
-    width: 95%;
-    height: 30px;
-    margin-bottom: 10px;
+    width: 100%;
+    height: 35px;
     background-color: #3B843B;
     color: white;
+}
+@media (max-width: 900px) {
+    .corpoPrincipal{
+        display: block;
+        
+    }
 }

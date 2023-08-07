@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,58 +9,116 @@
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/menu.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="container">
-        <a class="voltar"><img src="src/imagens/Seta.png" alt="Voltar para a tela anterior."></a>
-        <nav>
-            <input type="checkbox" name="menu-hamburguer" id="menu-hamburguer">
-            <label for="menu-hamburguer">
-                <div class="menu">
-                    <span class="hamburguer"></span>
-                </div>
-            </label>
-            <ul class="itensMenu">
-                <li><a href="#" class="fecharMesa"><img src="src/imagens/FecharMesa.png" alt="Fechar Mesa."></a></li>
-                <li><a href="#" class="transferenciaMesa"><img src="src/imagens/Transferencia.png" alt="Transferir consumo para outra mesa."></a></li>
-                <li><a href="#" class="agrupamentoMesa"><img src="src/imagens/Agrupamento.png" alt="Agrupar mesas."></a></li>
-                <li><a href="#" class="imprimirConsumo"><img src="src/imagens/impressora.png" alt="Imprimir consumo da mesa."></a></li>
-                <li><a href="#" class="logout"><img src="src/imagens/DeslogarSistema.png" alt="Deslogar do sistema."></a></li>
-            </ul>
-        </nav>
-        </div>
-        <img src="src/imagens/logo chefplus deitado.png" alt="logo" class="logo">
-    </header>
-    <main class="corpoPrincipal">
-        <div class="consultaProdutos tela">
-            <input type="text" class="pesquisaProduto" id="" alt="Pesquisa de produto" placeholder="Pesquisar um produto">
-            <div class="produtos">
-                <div class="itemProdutos">
-                    <div class="containerProdutos">
-                        <p class="nomeItem">Nome produto</p>
-                        <img src="" alt="Foto do produto">
-                        <p class="precoItem">R$10,00</p>
-                    </div>
-                    <div class="adicionarTiraritem">
-                        <button class="tirarItem"><img src="src/imagens/Retirar.png" alt="Tirar um item"></button>
-                        <p class="quantidade">00</p>
-                        <button class="adicionarItem"><img src="src/imagens/Adicionar.png" alt="Adicioar um item"></button>
-                    </div>
-                </div>
+    <main>
+        <header class="header">
+            <div class="container">
+                <a class="voltar"><img src="src/imagens/Seta.png" alt="Voltar para a tela anterior."></a>
+                <nav>
+                    <input type="checkbox" name="menu-hamburguer" id="menu-hamburguer">
+                    <label for="menu-hamburguer">
+                        <div class="menu">
+                            <span class="hamburguer"></span>
+                        </div>
+                    </label>
+                    <ul class="itensMenu">
+                        <li><a href="#" class="fecharMesa"><img src="src/imagens/FecharMesa.png" alt="Fechar Mesa."></a>
+                        </li>
+                        <li><a href="#" class="transferenciaMesa"><img src="src/imagens/Transferencia.png"
+                                    alt="Transferir consumo para outra mesa."></a></li>
+                        <li><a href="#" class="agrupamentoMesa"><img src="src/imagens/Agrupamento.png"
+                                    alt="Agrupar mesas."></a></li>
+                        <li><a href="#" class="imprimirConsumo"><img src="src/imagens/impressora.png"
+                                    alt="Imprimir consumo da mesa."></a></li>
+                        <li><a href="#" class="logout"><img src="src/imagens/DeslogarSistema.png"
+                                    alt="Deslogar do sistema."></a></li>
+                    </ul>
+                </nav>
             </div>
-            <button class="confirmarLancamento">Confirmar pedido</button>
-        </div>
-        <div class="telaItenslancados tela">
-            <p class="numeroMesa">Mesa 00</p>
-            <div class="gridItens">
-                <div class="informacoesItem">
-                    <p class="descricaoItemLancado">Descrição item - Observação do item</p>
-                    <p>Qtde X Valor = Total</p>
+            <img src="src/imagens/logo_chefplus_deitado.png" alt="logo" class="logo">
+        </header>
+        <div class="corpoPrincipal">
+            <div class="consultaProdutos tela">
+                <input type="text" class="pesquisaProduto" id="" alt="Pesquisa de produto"
+                    placeholder="Pesquisar um produto">
+                <div class="produtos">
+                    <div class="itemProdutos">
+                        <div class="containerProdutos">
+                            <p class="nomeItem">Nome produto</p>
+                            <img src="http://placekitten.com/80/80" alt="Foto do produto">
+                            <p class="precoItem">R$10,00</p>
+                        </div>
+                        <div class="adicionarTirarItem">
+                            <a class="tirarItem"><img src="src/imagens/Retirar.png" alt="Tirar um item"></a>
+                            <p class="quantidade">00</p>
+                            <a class="adicionarItem"><img src="src/imagens/Adicionar.png" alt="Adicioar um item"></a>
+                        </div>
+                    </div>
+                    <div class="itemProdutos">
+                        <div class="containerProdutos">
+                            <p class="nomeItem">Nome produto</p>
+                            <img src="http://placekitten.com/80/80" alt="Foto do produto">
+                            <p class="precoItem">R$10,00</p>
+                        </div>
+                        <div class="adicionarTirarItem">
+                            <a class="tirarItem"><img src="src/imagens/Retirar.png" alt="Tirar um item"></a>
+                            <p class="quantidade">00</p>
+                            <a class="adicionarItem"><img src="src/imagens/Adicionar.png" alt="Adicioar um item"></a>
+                        </div>
+                    </div>
+                    <div class="itemProdutos">
+                        <div class="containerProdutos">
+                            <p class="nomeItem">Nome produto</p>
+                            <img src="http://placekitten.com/80/80" alt="Foto do produto">
+                            <p class="precoItem">R$10,00</p>
+                        </div>
+                        <div class="adicionarTirarItem">
+                            <a class="tirarItem"><img src="src/imagens/Retirar.png" alt="Tirar um item"></a>
+                            <p class="quantidade">00</p>
+                            <a class="adicionarItem"><img src="src/imagens/Adicionar.png" alt="Adicioar um item"></a>
+                        </div>
+                    </div>
+                    <div class="itemProdutos">
+                        <div class="containerProdutos">
+                            <p class="nomeItem">Nome produto</p>
+                            <img src="http://placekitten.com/80/80" alt="Foto do produto">
+                            <p class="precoItem">R$10,00</p>
+                        </div>
+                        <div class="adicionarTirarItem">
+                            <a class="tirarItem"><img src="src/imagens/Retirar.png" alt="Tirar um item"></a>
+                            <p class="quantidade">00</p>
+                            <a class="adicionarItem"><img src="src/imagens/Adicionar.png" alt="Adicioar um item"></a>
+                        </div>
+                    </div>
+                    <div class="itemProdutos">
+                        <div class="containerProdutos">
+                            <p class="nomeItem">Nome produto</p>
+                            <img src="http://placekitten.com/80/80" alt="Foto do produto">
+                            <p class="precoItem">R$10,00</p>
+                        </div>
+                        <div class="adicionarTirarItem">
+                            <a class="tirarItem"><img src="src/imagens/Retirar.png" alt="Tirar um item"></a>
+                            <p class="quantidade">00</p>
+                            <a class="adicionarItem"><img src="src/imagens/Adicionar.png" alt="Adicioar um item"></a>
+                        </div>
+                    </div>
                 </div>
-                <button class="excluirItem"><img src="" alt="Excluir um item lançado"></button>
+                <button class="confirmarLancamento">Confirmar pedido</button>
             </div>
-            <p class="totalMesa">Total R$130,99</p>
+            <div class="itenslancados tela">
+                <p class="numeroMesa">Mesa 00</p>
+                <div class="gridItens">
+                    <div class="informacoesItem">
+                        <p class="descricaoItemLancado">Descrição item - Observação do item</p>
+                        <p>Qtde X Valor = Total</p>
+                    </div>
+                    <button class="excluirItem"><img src="" alt="Excluir um item lançado"></button>
+                </div>
+                <p class="totalMesa">Total R$130,99</p>
+            </div>
         </div>
     </main>
 </body>
+
 </html>
