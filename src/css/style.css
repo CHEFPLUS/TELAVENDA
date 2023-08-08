@@ -115,8 +115,6 @@ main{
 .corpoPrincipal .itenslancados{
     padding: 10px;
     min-width: 630px;
-    display: flex;
-    flex-direction: column;
 }
 .corpoPrincipal .itenslancados .numeroMesa{
     border: 1px solid #CCCCCC;
@@ -126,7 +124,6 @@ main{
     width: 120px;
     text-align: center;
     margin-bottom: 10px;
-    align-self: flex-end;
 }
 .corpoPrincipal .itenslancados .gridItens{
     border: 1px solid;
