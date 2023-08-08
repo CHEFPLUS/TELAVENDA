@@ -89,7 +89,9 @@ main{
     border: 1px solid;
     border-radius: 10px;
 }
-.corpoPrincipal .consultaProdutos .produtos .itemProdutos .adicionarTirarItem img{
+.corpoPrincipal .consultaProdutos .produtos .itemProdutos .adicionarTirarItem button{
+    border: none;
+    background-color: transparent;
     width: 25px;
     margin-top: 3px;
 }
@@ -109,6 +111,69 @@ main{
     -webkit-border-radius: 5px;
 }
 /* ----- FIM DO ESTILO DA BARRA DE ROLAGEM----- */
+
+/* ----- ESTILO DO PAINEL DE ITENS LANÇADOS ----- */
+.corpoPrincipal .itenslancados{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.corpoPrincipal .itenslancados .numeroMesa{
+    border: 1px solid #CCCCCC;
+    border-radius: 15px;
+    background-color: #F58634;
+    color: white;
+    width: 120px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.corpoPrincipal .itenslancados .totalMesa{
+    border-radius: 10px;
+    border: #CCCCCC;
+    height: 35px;
+    width: 100%;
+    background-color: #3B843B;
+    color: white;
+    font-size: 34px;
+    margin-top: 10px;
+}
+.corpoPrincipal .itenslancados .gridItens{
+    border: 1px solid;
+    border-radius: 10px;
+    width: 100%;
+}
+/* ----- FIM DO ESTILO DO PAINEL DE ITENS LANÇADOS ----- */
+
+/* ----- ESTILO DOS ITENS LANÇADOS ----- */
+.corpoPrincipal .itenslancados .gridItens .itemLancado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid ;
+    padding: 3px;
+    height: 40px;
+    font-size: 16px;
+}
+.corpoPrincipal .itenslancados .gridItens .itemLancado:last-child{
+    border: 0;
+}
+.corpoPrincipal .itenslancados .gridItens .itemLancado .valoresItem{
+    display: flex;
+    align-items: center;
+}
+.corpoPrincipal .itenslancados .gridItens .itemLancado .descricaoItemLancado{
+
+}
+.corpoPrincipal .itenslancados .gridItens .itemLancado button{
+    border: none;
+    border-left: 1px solid;
+    background-color: transparent;
+    padding: 2px;
+}
+.corpoPrincipal .itenslancados .gridItens .itemLancado img{
+    width: 35px;
+}
 
 @media (max-width: 900px) {
     .corpoPrincipal{
