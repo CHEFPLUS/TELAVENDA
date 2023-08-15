@@ -138,7 +138,7 @@ main{
     width: 100%;
     background-color: #3B843B;
     color: white;
-    font-size: 34px;
+    font-size: 2rem;
     margin-top: 20px;
     text-align: right;
     padding-right: 5px;
@@ -153,7 +153,7 @@ main{
     border-bottom: 1px solid ;
     padding: 3px;
     height: 40px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 .corpoPrincipal .itenslancados .gridItens .itemLancado:last-child{
     border: 0;
