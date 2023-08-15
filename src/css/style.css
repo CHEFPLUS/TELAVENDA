@@ -55,7 +55,7 @@ main{
     border-radius: 10px;
     border: #CCCCCC;
     width: 100%;
-    height: 35px;
+    height: 45px;
     background-color: #3B843B;
     color: white;
     font-size: 24px;
@@ -87,13 +87,18 @@ main{
     align-items: center;
     border: 1px solid;
     border-radius: 10px;
+    height: 30px;
 }
 .corpoPrincipal .consultaProdutos .produtos .itemProdutos .adicionarTirarItem button{
     border: none;
     background-color: transparent;
+    height: 20px;
 }
 .corpoPrincipal .consultaProdutos .produtos .itemProdutos .adicionarTirarItem img{
-    width: 25px;
+    width: 20px;
+}
+.corpoPrincipal .consultaProdutos .produtos .itemProdutos .adicionarTirarItem .tirarItem{
+    margin-bottom: 3px;
 }
 /* ----- FIM DO ESTILO DOS PRODUTOS CADASTRADOS ----- */
 
@@ -115,33 +120,35 @@ main{
 /* ----- ESTILO DO PAINEL DE ITENS LANÇADOS ----- */
 .corpoPrincipal .itenslancados{
     padding: 10px;
-    height: 100%;
+    position: relative;
+    max-height: 90vh;
 }
 .corpoPrincipal .itenslancados .numeroMesa{
     border: 1px solid #CCCCCC;
     border-radius: 15px;
     background-color: #F58634;
     color: white;
-    width: 120px;
+    width: 140px;
     text-align: center;
     margin-bottom: 10px;
 }
 .corpoPrincipal .itenslancados .gridItens{
-    border: 1px solid;
-    border-radius: 10px;
-    width: 100%;
+    margin: 0 auto;
+    width: 95%;
 }
 .corpoPrincipal .itenslancados .totalMesa{
     border-radius: 10px;
     border: #CCCCCC;
-    height: 35px;
-    width: 100%;
+    height: 45px;
+    width: 97%;
     background-color: #3B843B;
     color: white;
-    font-size: 2rem;
-    margin-top: 20px;
+    font-size: 38px;
+    margin:10px 0px 10px 3px;
     text-align: right;
     padding-right: 5px;
+    position: absolute;
+    bottom: 0;
 }
 /* ----- FIM DO ESTILO DO PAINEL DE ITENS LANÇADOS ----- */
 
@@ -150,13 +157,9 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid ;
     padding: 3px;
-    height: 40px;
-    font-size: 1rem;
-}
-.corpoPrincipal .itenslancados .gridItens .itemLancado:last-child{
-    border: 0;
+    font-size: 16px;
+    border-bottom: 1px solid;
 }
 .corpoPrincipal .itenslancados .gridItens .itemLancado .valoresItem{
     display: flex;
@@ -167,12 +170,11 @@ main{
 }
 .corpoPrincipal .itenslancados .gridItens .itemLancado button{
     border: none;
-    border-left: 1px solid;
     background-color: transparent;
     padding: 2px;
 }
 .corpoPrincipal .itenslancados .gridItens .itemLancado img{
-    width: 35px;
+    width: 16px;
 }
 
 @media (max-width: 1150px) {
@@ -181,5 +183,10 @@ main{
     }
     .corpoPrincipal .tela{
         width: 91%;
+    }
+    .corpoPrincipal .itenslancados .totalMesa{
+       position: relative;
+       width: 100%;
+       margin:10px 0px 0px 0px;
     }
 }
