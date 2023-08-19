@@ -29,6 +29,7 @@
 }
 .header .container .itensMenu li:hover{
     background-color: #F58634;
+    transition: 0.3s;
 }
 .header nav ul{
     display: flex;
