@@ -1,6 +1,15 @@
 .header{
     background-color: #666666;
     border-bottom:3px solid #F58634;
+    display: flex;
+    align-items: center;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    width: 100%;
 }
 .header .container img{
     height: 35px;
@@ -20,7 +29,6 @@
 }
 .header .container .itensMenu li:hover{
     background-color: #F58634;
-    border:1px solid #F58634;
 }
 .header nav ul{
     display: flex;
