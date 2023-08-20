@@ -20,6 +20,7 @@ main{
 .corpoPrincipal .consultaProdutos{
     padding: 10px;
     text-align: center;
+    height: 100%;
 }
 .corpoPrincipal .consultaProdutos input{
     border-radius: 10px;
@@ -88,21 +89,6 @@ main{
 }
 /* ----- FIM DO ESTILO DOS PRODUTOS CADASTRADOS ----- */
 
-/* -----ESTILO DA BARRA DE ROLAGEM----- */
-.produtos::-webkit-scrollbar-track {
-    background-color:#666666;
-    -webkit-border-radius: 5px;
-}
-.produtos::-webkit-scrollbar {
-    width: 10px;
-    background: #F4F4F4;
-}
-.produtos::-webkit-scrollbar-thumb {
-    background: white;
-    -webkit-border-radius: 5px;
-}
-/* ----- FIM DO ESTILO DA BARRA DE ROLAGEM----- */
-
 /* ----- ESTILO DO PAINEL DE ITENS LANÇADOS ----- */
 .corpoPrincipal .itenslancados{
     padding: 10px;
@@ -121,6 +107,9 @@ main{
 .corpoPrincipal .itenslancados .gridItens{
     margin: 0 auto;
     width: 95%;
+    overflow-y: scroll;
+    max-height: 75vh;
+    margin-bottom: 60px;
 }
 .corpoPrincipal .itenslancados .totalMesa{
     border-radius: 10px;
@@ -138,7 +127,7 @@ main{
 }
 /* ----- FIM DO ESTILO DO PAINEL DE ITENS LANÇADOS ----- */
 
-/* ----- ESTILO DOS ITENS LANÇADOS ----- */
+/* ----- ESTILO DO GRID DE ITENS LANÇADOS ----- */
 .corpoPrincipal .itenslancados .gridItens .itemLancado{
     display: flex;
     justify-content: space-between;
@@ -146,6 +135,9 @@ main{
     padding: 3px;
     font-size: 16px;
     border-bottom: 1px solid;
+}
+.corpoPrincipal .itenslancados .gridItens .itemLancado .descricaoItemLancado{
+    max-width: 75%;
 }
 .corpoPrincipal .itenslancados .gridItens .itemLancado .valoresItem{
     display: flex;
@@ -162,6 +154,7 @@ main{
 .corpoPrincipal .itenslancados .gridItens .itemLancado img{
     width: 16px;
 }
+/* ----- FIM DO ESTILO DO GRID DE ITENS LANÇADOS ----- */
 
 @media (max-width: 1150px) {
     .corpoPrincipal{
@@ -174,5 +167,8 @@ main{
        position: relative;
        width: 100%;
        margin:10px 0px 0px 0px;
+    }
+    .corpoPrincipal .itenslancados .gridItens{
+        margin-bottom: 0;
     }
 }

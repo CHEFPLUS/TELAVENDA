@@ -1,0 +1,70 @@
+.telaFechamento{
+    max-height: 100vh;
+    max-width: 900px;
+    min-width: 300px;
+    margin: 20px auto;
+    background-color: #CCCCCC;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    padding-bottom: 10px;
+}
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: 5px;
+}
+.cabecalho img{
+    height: 40px;
+}
+.telaFechamento .numeroMesa{
+    border-radius: 10px;
+    background-color: #F58634;
+    color: white;
+    text-align: center;
+}
+.telaFechamento .gridItens{
+    margin: 10px auto;
+    width: 95%;
+    overflow-y: scroll;
+    max-height: 40vh;
+}
+.telaFechamento .gridItens .itemLancado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    font-size: 16px;
+    border-bottom: 1px solid;
+}
+.telaFechamento .gridItens .itemLancado .descricaoItemLancado{
+    max-width: 75%;
+}
+.telaFechamento .gridItens .itemLancado .valoresItem{
+    display: flex;
+    align-items: center;
+}
+.telaFechamento .gridItens .itemLancado .valorItem{
+    margin-right: 5px;
+}
+.telaFechamento .gridItens .itemLancado button{
+    border: none;
+    background-color: transparent;
+    padding: 2px;
+}
+.telaFechamento .gridItens .itemLancado img{
+    width: 16px;
+}
+.telaFechamento .totalMesa{
+    border-radius: 10px;
+    height: 45px;
+    width: 98%;
+    background-color: #3B843B;
+    color: white;
+    font-size: 38px;
+    text-align: right;
+    margin: 0 auto;
+    padding-right: 4px;
+}
