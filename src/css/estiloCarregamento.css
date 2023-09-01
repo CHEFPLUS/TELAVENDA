@@ -12,7 +12,6 @@
 .loader .title {
     color: #525866;
     font-size: 16px;
-    letter-spacing: 2px;
 }
 .loading-animacao {
     transform: rotateZ(45deg);
