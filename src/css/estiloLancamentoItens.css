@@ -1,8 +1,4 @@
 /* ----- ESTILO DOS DOIS GRANDES PAINEIS ----- */
-main{
-    background:#EFEFEF url(../imagens/logo_fundo.png) no-repeat;
-    height: 100vh;
-}
 .corpoPrincipal{
     display: flex;
     justify-content: space-between;

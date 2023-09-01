@@ -15,31 +15,34 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="container">
+            <a href="menuInicial.html" class="voltar"><img src="src/imagens/Seta.png"
+                    alt="Voltar para a tela anterior."></a>
+            <nav>
+                <input type="checkbox" name="menu-hamburguer" id="menu-hamburguer">
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+                <ul class="itensMenu">
+                    <li><a href="#" class="fecharMesa"><img src="src/imagens/FecharMesa.png" alt="Fechar Mesa."></a>
+                    </li>
+                    <li><a href="#" class="transferenciaMesa"><img src="src/imagens/Transferencia.png" alt="Transferir consumo para outra mesa."></a></li>
+                    <li><a href="#" class="agrupamentoMesa"><img src="src/imagens/Agrupamento.png" alt="Agrupar mesas."></a></li>
+                    <li><a href="#" class="imprimirConsumo"><img src="src/imagens/impressora.png" alt="Imprimir consumo da mesa."></a></li>
+                    <li><a href="login.html" class="logout"><img src="src/imagens/DeslogarSistema.png" alt="Deslogar do sistema."></a></li>
+                </ul>
+            </nav>
+        </div>
+        <img src="src/imagens/logoEscritaLateral.png" alt="logo" class="logo">
+    </header>
     <main>
-        <header class="header">
-            <div class="container">
-                <a href="paginaInicial.html" class="voltar"><img src="src/imagens/Seta.png" alt="Voltar para a tela anterior."></a>
-                <nav>
-                    <input type="checkbox" name="menu-hamburguer" id="menu-hamburguer">
-                    <label for="menu-hamburguer">
-                        <div class="menu">
-                            <span class="hamburguer"></span>
-                        </div>
-                    </label>
-                    <ul class="itensMenu">
-                        <li><a href="#" class="fecharMesa"><img src="src/imagens/FecharMesa.png" alt="Fechar Mesa."></a></li>
-                        <li><a href="#" class="transferenciaMesa"><img src="src/imagens/Transferencia.png" alt="Transferir consumo para outra mesa."></a></li>
-                        <li><a href="#" class="agrupamentoMesa"><img src="src/imagens/Agrupamento.png" alt="Agrupar mesas."></a></li>
-                        <li><a href="#" class="imprimirConsumo"><img src="src/imagens/impressora.png" alt="Imprimir consumo da mesa."></a></li>
-                        <li><a href="login.html" class="logout"><img src="src/imagens/DeslogarSistema.png" alt="Deslogar do sistema."></a></li>
-                    </ul>
-                </nav>
-            </div>
-            <img src="src/imagens/logoEscritaLateral.png" alt="logo" class="logo">
-        </header>
         <div class="corpoPrincipal">
             <div class="consultaProdutos tela">
-                <input type="text" class="pesquisaProduto" id="" alt="Pesquisa de produto" placeholder="Pesquisar um produto">
+                <input type="text" class="pesquisaProduto" id="" alt="Pesquisa de produto"
+                    placeholder="Pesquisar um produto">
                 <div class="produtos scroll">
                     <div class="itemProdutos">
                         <div class="containerProdutos">
@@ -50,7 +53,8 @@
                         <div class="adicionarTirarItem">
                             <button class="tirarItem"><img src="src/imagens/Retirar.png" alt="Tirar um item"></button>
                             <p class="quantidade">00</p>
-                            <button class="adicionarItem"><img src="src/imagens/Adicionar.png" alt="Adicioar um item"></button>
+                            <button class="adicionarItem"><img src="src/imagens/Adicionar.png"
+                                    alt="Adicioar um item"></button>
                         </div>
                     </div>
                 </div>
@@ -63,9 +67,10 @@
                         <p class="descricaoItemLancado">Descrição item - Observação do item</p>
                         <div class="valoresItem">
                             <p class="valorItem">Qtde X Valor = Total</p>
-                            <button class="excluirItem"><img src="src/imagens/Cancelar.png" alt="Excluir um item lançado"></button>
+                            <button class="excluirItem"><img src="src/imagens/Cancelar.png"
+                                    alt="Excluir um item lançado"></button>
                         </div>
-                    </div>  
+                    </div>
                 </div>
                 <h2 class="totalMesa">Total R$130,99</h2>
             </div>
