@@ -32,18 +32,42 @@ header {
 }
 main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-main .produto form {
-    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+main .abas{
+    display: flex;
     width: 600px;
     margin-top: 20px;
-    border-radius: 10px;
+}
+main .abas .aba{
+    border: 1px solid #cccccc;
+    cursor: pointer;
+    padding: 5px;
+    border-radius:5px 5px 0px 0px;
+}
+main .abas .aba.selecionado{
+    border-bottom: none;
+    background-color: white;
+    z-index: 1;
+}
+main .produto{
+    margin-left: 20px;
+}
+main .produto .cadastroProduto.selecionado{
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    border-radius:0px 10px 10px 10px;
     padding: 10px;
     background-color: white;
     display: flex;
     justify-content: space-between;
+    border: 1px solid #cccccc;
+    border-top: none;
+}
+main .produto .cadastroProduto{
+    display: none;
 }
 main .produto form .informacoesProduto .codigosProduto {
     display: flex;

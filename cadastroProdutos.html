@@ -16,17 +16,18 @@
 </head>
 
 <body>
-    <div id="preloader">    
+    <div id="preloader">
         <div class="loading-animacao"></div>
         <span class="title">Carregando</span>
     </div>
     <div class="pesquisaProduto">
         <input type="text" placeholder="Digite o nome do produto.." class="txtBusca">
-        <button class="cadastrarProduto">Cadastrar Produto</button>    
+        <button class="cadastrarProduto">Cadastrar Produto</button>
     </div>
     <header class="header">
         <div class="container">
-            <a href="menuInicial.html" class="voltar"><img src="src/imagens/Seta.png" alt="Voltar para a tela anterior."></a>
+            <a href="menuInicial.html" class="voltar"><img src="src/imagens/Seta.png"
+                    alt="Voltar para a tela anterior."></a>
             <nav>
                 <input type="checkbox" name="menu-hamburguer" id="menu-hamburguer">
                 <label for="menu-hamburguer">
@@ -35,15 +36,24 @@
                     </div>
                 </label>
                 <ul class="itensMenu">
-                    <li><a href="login.html" class="logout"><img src="src/imagens/DeslogarSistema.png" alt="Deslogar do sistema."></a></li>
+                    <li><a href="login.html" class="logout"><img src="src/imagens/DeslogarSistema.png"
+                                alt="Deslogar do sistema."></a></li>
                 </ul>
             </nav>
         </div>
         <img src="" id="logo" alt="logo" class="logo">
-    </header>   
+    </header>
     <main>
         <div class="produto">
-            <form action="" method="get">
+            <ul class="abas">
+                <li class="aba selecionado" id="cadastroProduto">
+                    <p>Cadastro</p>
+                </li>
+                <li class="aba" id="historicoProduto">
+                    <p>Histórico</p>
+                </li>
+            </ul>
+            <form action="" method="get" class="cadastroProduto selecionado" id="cadastro-cadastroProduto">
                 <div class="informacoesProduto">
                     <div class="codigosProduto">
                         <label>Código: <input type="text" class="inputInformacoes"></label>
@@ -84,11 +94,15 @@
                     </div>
                 </div>
             </form>
+            <form action="" class="cadastroProduto" id="cadastro-historicoProduto">
+                <p>historico</p>
+            </form>
         </div>
     </main>
     <script src="src/js/jquery.js"></script>
     <script src="src/js/carregamento.js"></script>
     <script src="src/js/logo.js"></script>
+    <script src="src/js/abasCadastroProduto.js"></script>
 </body>
 
 </html>
