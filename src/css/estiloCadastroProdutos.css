@@ -88,6 +88,9 @@ main .produto form .informacoesProduto .inputInformacoes{
     background-color: #EEEEEE;
     width: 95%;
 }
+main .produto form input:focus{
+    outline-color: #F58634;
+}
 main .produto form .informacoesProduto select {
     margin-bottom: 5px;
     border-radius: 5px;
@@ -116,9 +119,13 @@ main .produto form .fotoBotoes{
 main .produto form .fotoBotoes img{
     height: 120px;
 }
+main .produto form .fotoBotoes .botoes button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 15px;
+}
 main .produto form .fotoBotoes .botoes img{
     height: 25px;
-}
-main .produto form .fotoBotoes .botoes .confirmar{
-    margin-right: 10px;
 }
