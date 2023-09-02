@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesas </title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <link rel="stylesheet" href="src/css/estiloPainelMesas.css">
+    <link rel="stylesheet" href="src/css/estiloCarregamento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="preloader">    
+        <div class="loading-animacao"></div>
+        <span class="title">Carregando</span>
+    </div>
+    <div class="infocaixa">
+        <p>Operador: Fernando Resolvedor de Problemas</p>
+        <p>Caixa Aberto</p>
+    </div>
+    <header class="header">
+        <div class="container">
+            <a href="menuInicial.html" class="voltar"><img src="src/imagens/Seta.png"
+                    alt="Voltar para a tela anterior."></a>
+            <nav>
+                <input type="checkbox" name="menu-hamburguer" id="menu-hamburguer">
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+                <ul class="itensMenu">
+                    <li><a href="#"><img src="src/imagens/Caixa.png" alt="Fechar Mesa."></a></li>
+                    <li><a href="login.html" class="logout"><img src="src/imagens/DeslogarSistema.png" alt="Deslogar do sistema."></a></li>
+                </ul>
+            </nav>
+        </div>
+        <img src="" id="logo" alt="logo" class="logo">
+    </header>
+    
+
+    <main>
+        <div class='painelMesas'>
+            <a href="lancamentoItens.html">
+                <p class="status">Livre</p>
+                <p class="numeroMesa">01</p>
+            </a>
+            <a href="#">
+                <p class="status">Livre</p>
+                <p class="numeroMesa">02</p>
+            </a>
+            <a href="#">
+                <p class="status">Livre</p>
+                <p class="numeroMesa">03</p>
+            </a>
+            <a href="#">
+                <p class="status">Livre</p>
+                <p class="numeroMesa">04</p>
+            </a>
+            <a href="#">
+                <p class="status">Livre</p>
+                <p class="numeroMesa">05</p>
+            </a>
+            <a href="#">
+                <p class="status">Livre</p>
+                <p class="numeroMesa">06</p>
+            </a>
+            <a href="#">
+                <p class="status">Livre</p>
+                <p class="numeroMesa">07</p>
+            </a>
+            <a href="#">
+                <p class="status2">Ocupado</p>
+                <p class="numeroMesa">08</p>
+            </a>
+            <a href="#">
+                <p class="status">Livre</p>
+                <p class="numeroMesa">09</p>
+            </a>
+            <a href="#">
+                <p class="status">Livre</p>
+                <p class="numeroMesa">10</p>
+            </a>
+        </div>
+    </main>
+    <script src="src/js/jquery.js"></script>
+    <script src="src/js/carregamento.js"></script>
+    <script src="src/js/logo.js"></script>
+</body>
+
+</html>
