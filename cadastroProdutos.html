@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChefPlus</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <link rel="stylesheet" href="src/css/scroll.css">
+    <link rel="stylesheet" href="src/css/estiloCarregamento.css">
+    <link rel="stylesheet" href="src/css/estiloCadastroProdutos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="preloader">    
+        <div class="loading-animacao"></div>
+        <span class="title">Carregando</span>
+    </div>
+    <div class="pesquisaProduto">
+        <input type="text" placeholder="Digite o nome do produto.." class="txtBusca">
+        <button class="cadastrarProduto">Cadastrar Produto</button>    
+    </div>
+    <header class="header">
+        <div class="container">
+            <a href="menuInicial.html" class="voltar"><img src="src/imagens/Seta.png" alt="Voltar para a tela anterior."></a>
+            <nav>
+                <input type="checkbox" name="menu-hamburguer" id="menu-hamburguer">
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+                <ul class="itensMenu">
+                    <li><a href="login.html" class="logout"><img src="src/imagens/DeslogarSistema.png" alt="Deslogar do sistema."></a></li>
+                </ul>
+            </nav>
+        </div>
+        <img src="" id="logo" alt="logo" class="logo">
+    </header>   
+    <main>
+        <div class="produto">
+            <form action="" method="get">
+                <div class="informacoesProduto">
+                    <div class="codigosProduto">
+                        <label>Código: <input type="text" class="inputInformacoes"></label>
+                        <label>Código de Barras: <input type="text" class="inputInformacoes"></label>
+                    </div>
+                    <p>Produto: <input type="text" class="inputInformacoes"></p>
+                    <label>Descrição: <input type="text" class="inputInformacoes"></label>
+                    <div class="grupoSubgrupo">
+                        <label for="grupo">Grupo:
+                            <select name="grupo" id="grupo">
+                                <option value="">Selecione</option>
+                            </select>
+                        </label>
+                        <label for="subGrupo">Subgrupo:
+                            <select name="subGrupo" id="subGrupo">
+                                <option value="">Selecione</option>
+                            </select>
+                        </label>
+                    </div>
+                    <label>Setor de impressão:
+                        <select name="setor" id="setorImpressao">
+                            <option value="">Selecione</option>
+                        </select>
+                    </label>
+                    <p>Preço de venda: <input type="text" class="inputInformacoes precoVenda"></p>
+                    <div class="flagsProduto">
+                        <input type="checkbox" id="ativo">
+                        <label for="ativo">Ativo</label>
+                        <input type="checkbox" id="adicional">
+                        <label for="adiciona">Adicional</label>
+                    </div>
+                </div>
+                <div class="fotoBotoes">
+                    <img src="http://placekitten.com/100/120" class="fotoProduto">
+                    <div class="botoes">
+                        <img src="src/imagens/Confirmar.png" class="confirmar">
+                        <img src="src/imagens/Cancelar.png" class="cancelar">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="src/js/jquery.js"></script>
+    <script src="src/js/carregamento.js"></script>
+    <script src="src/js/logo.js"></script>
+</body>
+
+</html>

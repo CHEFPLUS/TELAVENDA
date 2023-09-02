@@ -1,0 +1,100 @@
+header {
+    position: relative;
+}
+.pesquisaProduto {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    margin: 10px 0px 0px 60px;
+}
+.pesquisaProduto .txtBusca {
+    font-size: 18px;
+    border: none;
+    height: 32px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+.cadastrarProduto {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #3B843B;
+    color: white;
+    padding: 0px 10px;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    margin-left: 10px;
+}
+.cadastrarProduto:hover {
+    border: 1px solid #F58634;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .produto form {
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+main .produto form .informacoesProduto .codigosProduto {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+main .produto form .informacoesProduto .grupoSubgrupo {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    width: 97%;
+}
+main .produto form .informacoesProduto .inputInformacoes{
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    height: 20px;
+    background-color: #EEEEEE;
+    width: 95%;
+}
+main .produto form .informacoesProduto select {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    height: 25px;
+}
+main .produto form .informacoesProduto .precoVenda{
+    width: 15%;
+}
+main .produto form .informacoesProduto .flagsProduto{
+    width: 95%;
+}
+main .produto form .informacoesProduto .flagsProduto input{
+    align-self: self-start;
+}
+main .produto form .informacoesProduto .flagsProduto label{
+    margin-right: 15px;
+}
+main .produto form .fotoBotoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: self-end;
+    width: 100px;
+    margin-top: 18px;
+}
+main .produto form .fotoBotoes img{
+    height: 120px;
+}
+main .produto form .fotoBotoes .botoes img{
+    height: 25px;
+}
+main .produto form .fotoBotoes .botoes .confirmar{
+    margin-right: 10px;
+}
