@@ -42,23 +42,25 @@
         <form action="" method="get" class="funcionario">
             <div>
                 <label for="id">Código: </label>
-                <input type="text" size="2" id="id">
+                <input type="text" size="2" id="id">   
+            </div>
+            <div>
                 <label for="nome">Nome: </label>
                 <input type="text" size="60" id="nome">
             </div>
             <div>
                 <label for="cpf">CPF: </label>
-                <input type="text" id="cpf">
-                <label for="dataNascimento">Data de nascimento: </label>
+                <input type="text" size="11" id="cpf">
+                <label for="dataNascimento" class="dataNascimento">Data de nascimento: </label>
                 <input type="date" name="" id="dataNascimento">
             </div>
             <div>
                 <label for="cep">Cep: </label>
-                <input type="text" id="cep">
-            </div>
+                <input type="text" size="7" id="cep">
+            </div>                
             <div>
                 <label for="endereco">Endereço: </label>
-                <input type="text" size="50" id="endereco">
+                <input type="text" size="40" id="endereco">
                 <label for="numeroEndereco">Número: </label>
                 <input type="text" size="5" id="numeroEndereco">
             </div>
@@ -78,6 +80,8 @@
             <div>
                 <label for="email">E-mail: </label>
                 <input type="text" name="" id="email">
+            </div>
+            <div>
                 <label for="telefone">Telefone: </label>
                 <input type="text" name="" id="telefone">
             </div>
@@ -87,16 +91,17 @@
                 <label for="senha">Senha: </label>
                 <input type="password" id="senha">
             </div>
-            <div>
+            <div class="flags">
                 <input type="checkbox" name="" id="status">
                 <label for="status">Ativo</label>
                 <input type="checkbox" name="" id="garcom">
                 <label for="garcom">Garçom</label>
             </div>
             <div class="botoes">
-                <input type="submit" value="Incluir">
-                <input type="submit" value="Alterar">
-                <input type="submit" value="Excluir">
+                <input type="submit" class="incluir" value="Incluir">
+                <input type="submit" class="alterar" value="Alterar">
+                <input type="submit" class="consultar" value="Consultar">
+                <input type="submit" class="excluir" value="Excluir">
             </div>
         </form>
     </main>

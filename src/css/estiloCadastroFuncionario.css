@@ -9,12 +9,67 @@ main .funcionario{
     border-radius:10px;
     padding: 10px;
     background-color: white;
-    display: flex;
-    flex-direction: column;
     border: 1px solid #cccccc;
     margin-top: 30px;
 }
 main .funcionario div{
     width: 100%;
-    margin-top: 5px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+main .funcionario div input[type=text],
+main .funcionario div input[type=date],
+main .funcionario div input[type=password]{
+    border-radius: 5px;
+    border: none;
+    height: 24px;
+    background-color: #EEEEEE;
+    padding:3px 5px;
+    margin:0px 10px 0px 3px;
+}
+main .funcionario div input:focus,
+main .funcionario div select:focus{
+    outline-color: #F58634;
+}
+main .funcionario div select{
+    margin:0px 10px 0px 3px;
+    border-radius: 5px;
+    height: 22px;
+}
+main .funcionario div select:hover{
+    border-color: #F58634;
+}
+main .funcionario div label{
+    width: 70px;
+    text-align: right;
+}
+main .funcionario div .dataNascimento{
+    width: 150px;
+}
+main .funcionario .flags label{
+    text-align: left;
+    margin-left: 5px;
+}
+main .funcionario .botoes{
+    justify-content: space-around;
+}
+main .funcionario .botoes input{
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    border-color: white;
+    color: white;
+}
+main .funcionario .botoes .incluir{
+    background-color: #3B843B;
+}
+main .funcionario .botoes .alterar{
+    background-color: orange;
+}
+main .funcionario .botoes .consultar{
+    background-color: blue;
+}
+main .funcionario .botoes .excluir{
+    background-color: orangered;
 }
