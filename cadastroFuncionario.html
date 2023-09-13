@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChefPlus</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <link rel="stylesheet" href="src/css/scroll.css">
+    <link rel="stylesheet" href="src/css/estiloCarregamento.css">
+    <link rel="stylesheet" href="src/css/estiloCadastroFuncionario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loading-animacao"></div>
+        <span class="title">Carregando</span>
+    </div>
+    <header class="header">
+        <div class="container">
+            <a href="menuAdministracao.html" class="voltar"><img src="src/imagens/Seta.png"
+                    alt="Voltar para a tela anterior."></a>
+            <nav>
+                <input type="checkbox" name="menu-hamburguer" id="menu-hamburguer">
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+                <ul class="itensMenu">
+                    <li><a href="login.html" class="logout"><img src="src/imagens/DeslogarSistema.png" alt="Deslogar do sistema."></a></li>
+                </ul>
+            </nav>
+        </div>
+        <img src="" id="logo" alt="logo" class="logo">
+    </header>
+    <main>
+        <form action="" method="get" class="funcionario">
+            <div>
+                <label for="id">Código: </label>
+                <input type="text" size="2" id="id">
+                <label for="nome">Nome: </label>
+                <input type="text" size="60" id="nome">
+            </div>
+            <div>
+                <label for="cpf">CPF: </label>
+                <input type="text" id="cpf">
+                <label for="dataNascimento">Data de nascimento: </label>
+                <input type="date" name="" id="dataNascimento">
+            </div>
+            <div>
+                <label for="cep">Cep: </label>
+                <input type="text" id="cep">
+            </div>
+            <div>
+                <label for="endereco">Endereço: </label>
+                <input type="text" size="50" id="endereco">
+                <label for="numeroEndereco">Número: </label>
+                <input type="text" size="5" id="numeroEndereco">
+            </div>
+            <div>
+                <label for="bairro">Bairro: </label>
+                <input type="text" id="bairro">
+            </div>
+            <div>
+                <label for="cidade">Cidade: </label>
+                <select name="" id="cidade">
+                    <option value="">-- Selecione --</option>
+                    <option value="">Campo Grande</option>
+                </select>
+                <label for="uf">UF: </label>
+                <input type="text" size="2" id="uf" disabled>
+            </div>
+            <div>
+                <label for="email">E-mail: </label>
+                <input type="text" name="" id="email">
+                <label for="telefone">Telefone: </label>
+                <input type="text" name="" id="telefone">
+            </div>
+            <div>
+                <label for="usuario">Usuário: </label>
+                <input type="text" id="usuario">
+                <label for="senha">Senha: </label>
+                <input type="password" id="senha">
+            </div>
+            <div>
+                <input type="checkbox" name="" id="status">
+                <label for="status">Ativo</label>
+                <input type="checkbox" name="" id="garcom">
+                <label for="garcom">Garçom</label>
+            </div>
+            <div class="botoes">
+                <input type="submit" value="Incluir">
+                <input type="submit" value="Alterar">
+                <input type="submit" value="Excluir">
+            </div>
+        </form>
+    </main>
+    <script src="src/js/jquery.js"></script>
+    <script src="src/js/carregamento.js"></script>
+    <script src="src/js/logo.js"></script>
+    <script src="src/js/abas.js"></script>
+</body>
+
+</html>
