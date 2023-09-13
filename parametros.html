@@ -8,21 +8,22 @@
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/menu.css">
     <link rel="stylesheet" href="src/css/scroll.css">
-    <link rel="stylesheet" href="src/css/estiloMenuLateral.css">
     <link rel="stylesheet" href="src/css/estiloCarregamento.css">
+    <link rel="stylesheet" href="src/css/estiloParametros.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="preloader">    
+    <div id="preloader">
         <div class="loading-animacao"></div>
         <span class="title">Carregando</span>
     </div>
     <header class="header">
         <div class="container">
-            <a href="menuInicial.html" class="voltar"><img src="src/imagens/Seta.png" alt="Voltar para a tela anterior."></a>
+            <a href="menuAdministracao.html" class="voltar"><img src="src/imagens/Seta.png"
+                    alt="Voltar para a tela anterior."></a>
             <nav>
                 <input type="checkbox" name="menu-hamburguer" id="menu-hamburguer">
                 <label for="menu-hamburguer">
@@ -38,28 +39,38 @@
         <img src="" id="logo" alt="logo" class="logo">
     </header>
     <main>
-        <div class="corpoPrincipal">
-            <a href="#" class="botoesLateral">
-                <img src="src/imagens/Funcionarios.png">
-                <h3 class="descricaoMenu">Funcionários</h3>
-            </a>
-            <a href="cadastroProdutos.html" class="botoesLateral">
-                <img src="/src/imagens/Produtos.png">
-                <h3 class="descricaoMenu">Produtos</h3>
-            </a>
-            <a href="#" class="botoesLateral">
-                <img src="src/imagens/CaixaAdm.png">
-                <h3 class="descricaoMenu">Caixa</h3>
-            </a>
-            <a href="parametros.html" class="botoesLateral">
-                <img src="src/imagens/Parametros.png">
-                <h3 class="descricaoMenu">Parâmetros</h3>
-            </a>
+        <div class="parametros">
+            <ul class="abas">
+                <li class="aba selecionado" id="gerais">
+                    <p>Gerais</p>
+                </li>
+                <li class="aba" id="venda">
+                    <p>Módulo mesas</p>
+                </li>
+            </ul>
+            <div class="telaConteudo selecionado" id="tela-gerais">
+                <div>
+                    <input type="checkbox" name="" id="teste">
+                    <label for="teste">Parametro teste</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="teste2">
+                    <label for="teste2">Parametro teste 2</label>
+                </div>
+                
+            </div>
+            <div class="telaConteudo" id="tela-venda">
+                <div>
+                    <input type="text" name="" id="numeroMesas" size="2" maxlength="3">
+                    <label for="numeroMesas">Quantidade de mesa no painel de mesas.</label>
+                </div>
+            </div>
         </div>
     </main>
     <script src="src/js/jquery.js"></script>
     <script src="src/js/carregamento.js"></script>
     <script src="src/js/logo.js"></script>
+    <script src="src/js/abas.js"></script>
 </body>
 
 </html>

@@ -55,7 +55,7 @@ main .abas .aba.selecionado{
 main .produto{
     margin-left: 20px;
 }
-main .produto .cadastroProduto.selecionado{
+main .produto .telaConteudo.selecionado{
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
     width: 600px;
     border-radius:0px 10px 10px 10px;
@@ -66,7 +66,7 @@ main .produto .cadastroProduto.selecionado{
     border: 1px solid #cccccc;
     border-top: none;
 }
-main .produto .cadastroProduto{
+main .produto .telaConteudo{
     display: none;
 }
 main .produto form .informacoesProduto .codigosProduto {

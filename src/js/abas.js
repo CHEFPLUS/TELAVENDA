@@ -14,9 +14,9 @@ function selecionarAba(aba){
     aba.classList.add("selecionado");
 }
 function mostrarInformacao(aba){
-    const informacaoSelecionada = document.querySelector(".cadastroProduto.selecionado");
+    const informacaoSelecionada = document.querySelector(".telaConteudo.selecionado");
     informacaoSelecionada.classList.remove("selecionado");
-    const idDoElementoDeInformacoesDaAba = `cadastro-${aba.id}`;
+    const idDoElementoDeInformacoesDaAba = `tela-${aba.id}`;
     const informacaoASerMostrada = document.getElementById(idDoElementoDeInformacoesDaAba)
     informacaoASerMostrada.classList.add("selecionado")
 }
